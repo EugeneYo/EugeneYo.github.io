@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .center {
+      margin: 100px;
+      padding: 100px;
+      justify-content: center;
+      align-items: center;
+      height: 200px;
+      border: 3px solid aquamarine;
+    }
+
+    .innerCenter {
+      display: flex;
+      justify-content: center;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="center">
+        <div class="innerCenter">
+          <input id="myInput" type="text" name="fname" placeholder="Please enter your input" />
+          <button id="myButton" type="button">Enter</button>
+        </div>
+        <div class="innerCenter">
+          <h1 style="text-decoration: underline">Result</h1>
+        </div>
+        <div class="innerCenter">
+          <h2 id="myOutput"></h2>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
