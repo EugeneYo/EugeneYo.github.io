@@ -30,59 +30,57 @@
 
           <!-- <div class="portfolio-page-video embed-responsive embed-responsive-16by9">
           <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/97102654?autoplay=0"></iframe>
-        </div> -->
-          <div class="container">
-            <table class="table" style="width: 100%">
-              <thead>
-                <tr class="h">
-                  <th style="text-align: left">Format</th>
-                  <th style="text-align: left">Description</th>
-                  <th style="text-align: left">Output</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td style="text-align: left">*this is a bolded text*</td>
-                  <td style="text-align: left">Bold</td>
-                  <td style="font-weight: bold; text-align: left">this is a bolded text</td>
-                </tr>
-                <tr>
-                  <td style="text-align: left">\this is an italicized text\</td>
-                  <td style="text-align: left">Italic</td>
-                  <td style="font-style: italic; text-align: left">this is an italicized text</td>
-                </tr>
-                <tr>
-                  <td style="text-align: left">_this is an underlined text_</td>
-                  <td style="text-align: left">Underline</td>
-                  <td style="text-align: left"><u>this is an underlined text</u></td>
-                </tr>
-                <tr>
-                  <td style="text-align: left">-this is a strikethrough text-</td>
-                  <td style="text-align: left">Strikethrough</td>
-                  <td style="text-align: left"><strike>this is a strikethrough text</strike></td>
-                </tr>
-                <tr>
-                  <td style="text-align: left">#this is a highlighted text#</td>
-                  <td style="text-align: left">Highlight</td>
-                  <td style="text-align: left"><mark>this is a highlighted text</mark></td>
-                </tr>
-              </tbody>
-            </table>
+            </div> -->
+          <div class="col" style="padding: 0;">
+            <!-- <div class="col-sm-12 col-md-12"> -->
+              <div class="container" style="padding: 0;">
+                <table class="table" style="width: 100%; border: solid gray;border-collapse: collapse;padding: 5px;">
+                  <thead>
+                    <tr class="h">
+                      <th style="text-align: left;border: solid gray;padding: 5px;">Format</th>
+                      <th style="text-align: left;border: solid gray;padding: 5px;">Description</th>
+                      <th style="text-align: left;border: solid gray;padding: 5px;">Output</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td style="text-align: left;border: solid gray;padding: 5px;">*bolded text*</td>
+                      <td style="text-align: left;border: solid gray;padding: 5px;">Bold</td>
+                      <td style="font-weight: bold; text-align: left;border: solid gray;padding: 5px;">bolded text</td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: left;border: solid gray;padding: 5px;">\italicized text\</td>
+                      <td style="text-align: left;border: solid gray;padding: 5px;">Italic</td>
+                      <td style="font-style: italic; text-align: left;border: solid gray;padding: 5px;">italicized text</td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: left;border: solid gray;padding: 5px;">_underlined text_</td>
+                      <td style="text-align: left;border: solid gray;padding: 5px;">Underline</td>
+                      <td style="text-align: left;border: solid gray;padding: 5px;"><u>underlined text</u></td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: left;border: solid gray;padding: 5px;">-strikethrough text-</td>
+                      <td style="text-align: left;border: solid gray;padding: 5px;">Strikethrough</td>
+                      <td style="text-align: left;border: solid gray;padding: 5px;"><strike>strikethrough text</strike></td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: left;border: solid gray;padding: 5px;">#highlighted text#</td>
+                      <td style="text-align: left;border: solid gray;padding: 5px;">Highlight</td>
+                      <td style="text-align: left;border: solid gray;padding: 5px;"><mark>highlighted text</mark></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div><br /><br />
+
+              <label for="input">Text : </label><br />
+              <textarea class="input" name="input" style="width: 100%; height: 95px;"></textarea><br />
+              <button>submit</button><br /><br />
+              <label for="output">Output : </label><br />
+              <!-- <textarea class="output" name="output" cols="50" rows="5"></textarea> -->
+              <div style="width: 100%; height: 100px; background-color: #333333; padding: 10px;"><p class="output" ></p></div>
+              
+            <!-- </div> -->
           </div>
-          <br /><br />
-
-          <label for="input">Text : </label>
-          <br />
-          <textarea class="input" name="input" cols="85" rows="5"></textarea>
-          <br />
-          <button>submit</button>
-
-          <br /><br />
-          <label for="output">Output : </label>
-          <br />
-          <!-- <textarea class="output" name="output" cols="50" rows="5"></textarea> -->
-          <p class="output"></p>
-
           <script type="text/javascript">
             jQuery(document).ready(function ($) {
               $(".portfolio-page-carousel").imagesLoaded(function () {
@@ -169,7 +167,7 @@
       <div class="white-space-50"></div>
 
       <div class="row">
-        <div class="col-sm-12">
+        <div class="col-sm-8 col-md-8 portfolio-block">
           <h3>JavaScript Code :</h3><br>
           <span style="text-align: justify;">
             const <h5 style="display: inline;">button</h5>  = document.querySelector("button");<br>
@@ -189,6 +187,7 @@
         </span>
           </h5>
         </div>
+      </div>
       </div>
     </div>
   </div>
