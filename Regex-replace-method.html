@@ -1,0 +1,195 @@
+<div id="ajax-page" class="ajax-page-content">
+  <div class="ajax-page-wrapper">
+    <div class="ajax-page-nav">
+      <div class="nav-item ajax-page-prev-next">
+        <a class="ajax-page-load" href="portfolio-3.html"><i class="lnr lnr-chevron-left"></i></a>
+        <a class="ajax-page-load" href="portfolio-2.html"><i class="lnr lnr-chevron-right"></i></a>
+      </div>
+      <div class="nav-item ajax-page-close-button">
+        <a id="ajax-page-close-button" href="#"><i class="lnr lnr-cross"></i></a>
+      </div>
+    </div>
+
+    <div class="ajax-page-title">
+      <h1>Regex Replace Method</h1>
+    </div>
+    <div class="col">
+      <div class="row">
+        <div class="col-sm-8 col-md-8 portfolio-block">
+          <!-- <div class="owl-carousel portfolio-page-carousel"> -->
+          <!-- <div class="item">
+            <img src="img/portfolio/full/1.jpg" alt="" />
+          </div>
+          <div class="item">
+            <img src="img/portfolio/full/2.jpg" alt="" />
+          </div>
+          <div class="item">
+            <img src="img/portfolio/full/3.jpg" alt="" />
+          </div> -->
+          <!-- </div> -->
+
+          <!-- <div class="portfolio-page-video embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/97102654?autoplay=0"></iframe>
+        </div> -->
+          <div class="container">
+            <table class="table" style="width: 100%">
+              <thead>
+                <tr class="h">
+                  <th style="text-align: left">Format</th>
+                  <th style="text-align: left">Description</th>
+                  <th style="text-align: left">Output</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="text-align: left">*this is a bolded text*</td>
+                  <td style="text-align: left">Bold</td>
+                  <td style="font-weight: bold; text-align: left">this is a bolded text</td>
+                </tr>
+                <tr>
+                  <td style="text-align: left">\this is an italicized text\</td>
+                  <td style="text-align: left">Italic</td>
+                  <td style="font-style: italic; text-align: left">this is an italicized text</td>
+                </tr>
+                <tr>
+                  <td style="text-align: left">_this is an underlined text_</td>
+                  <td style="text-align: left">Underline</td>
+                  <td style="text-align: left"><u>this is an underlined text</u></td>
+                </tr>
+                <tr>
+                  <td style="text-align: left">-this is a strikethrough text-</td>
+                  <td style="text-align: left">Strikethrough</td>
+                  <td style="text-align: left"><strike>this is a strikethrough text</strike></td>
+                </tr>
+                <tr>
+                  <td style="text-align: left">#this is a highlighted text#</td>
+                  <td style="text-align: left">Highlight</td>
+                  <td style="text-align: left"><mark>this is a highlighted text</mark></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <br /><br />
+
+          <label for="input">Text : </label>
+          <br />
+          <textarea class="input" name="input" cols="85" rows="5"></textarea>
+          <br />
+          <button>submit</button>
+
+          <br /><br />
+          <label for="output">Output : </label>
+          <br />
+          <!-- <textarea class="output" name="output" cols="50" rows="5"></textarea> -->
+          <p class="output"></p>
+
+          <script type="text/javascript">
+            jQuery(document).ready(function ($) {
+              $(".portfolio-page-carousel").imagesLoaded(function () {
+                $(".portfolio-page-carousel").owlCarousel({
+                  smartSpeed: 1200,
+                  items: 1,
+                  loop: true,
+                  dots: true,
+                  nav: true,
+                  navText: false,
+                  margin: 10,
+                  autoHeight: true,
+                });
+              });
+            });
+
+            document.querySelector("button").addEventListener("click", () => {
+              string = document.querySelector(".input").value;
+              string = string.replace(/\\([^\\]+)\\/g, "<em>$1</em>");
+              string = string.replace(/\-([^--]+)\-/g, "<strike>$1</strike>");
+              string = string.replace(/\_([^__]+)\_/g, "<u>$1</u>");
+              string = string.replace(/\#([^##]+)\#/g, "<span style='background-color: yellow;'>$1</span>");
+              string = string.replace(/\*([^**]+)\*/g, "<strong>$1</strong>");
+              document.querySelector(".output").innerHTML = string;
+            });
+          </script>
+        </div>
+
+        <div class="col-sm-4 col-md-4 portfolio-block">
+          <!-- Project Description -->
+          <div class="project-description">
+            <div class="block-title">
+              <h3>JavaScript</h3>
+            </div>
+            <ul class="project-general-info">
+            <li>
+              <p><i class="fa fa-user"></i> Li Xin & Eugene</p>
+            </li>
+            <!-- <li>
+              <p><i class="fa fa-globe"></i> <a href="#" target="_blank">www.project-site.com</a></p>
+            </li> -->
+            <li>
+              <p><i class="fa fa-calendar"></i> 4th February, 2021</p>
+            </li>
+            </ul>
+
+          <p style="text-align: justify;">
+                Write a simple HTML document to provide user to enter multiple lines of plaintexts and use JavaScript to style the input. The output should be stated according to the table shown.
+            </p>
+
+            <!-- /Project Description -->
+
+            <!-- Technology -->
+            <div class="tags-block">
+            <div class="block-title">
+              <h3>Technology</h3>
+            </div>
+            <ul class="tags">
+              <li><a>HTML5</a></li>
+              <li><a>CSS3</a></li>
+              <li><a>JavaScript</a></li>
+              <!-- <li><a>jQuery</a></li>
+              <li><a>Ajax</a></li>
+              <li><a>PHP5</a></li> -->
+            </ul>
+          </div>
+            <!-- /Technology -->
+
+            <!-- Share Buttons -->
+            <!-- <div class="btn-group share-buttons">
+            <div class="block-title">
+              <h3>Share</h3>
+            </div>
+            <a href="#" target="_blank" class="btn"><i class="fab fa-facebook-f"></i> </a>
+            <a href="#" target="_blank" class="btn"><i class="fab fa-twitter"></i> </a>
+            <a href="#" target="_blank" class="btn"><i class="fab fa-dribbble"></i> </a>
+          </div> -->
+            <!-- /Share Buttons -->
+          </div>
+          <!-- Project Description -->
+          
+        </div>
+      </div>
+      <div class="white-space-50"></div>
+
+      <div class="row">
+        <div class="col-sm-12">
+          <h3>JavaScript Code :</h3><br>
+          <span style="text-align: justify;">
+            const <h5 style="display: inline;">button</h5>  = document.querySelector("button");<br>
+            const <h5 style="display: inline;">output</h5>  = document.querySelector(".output");<br>
+            const <h5 style="display: inline;">input</h5> = document.querySelector(".input"); </h5><br><br>
+
+            <h5 style="display: inline;">button</h5>.addEventListener("click", () => { <br>
+            var <h5 style="display: inline;">string</h5> = <h5 style="display: inline;">input</h5>.value; <br>
+            <h5 style="display: inline;">string</h5> = <h5 style="display: inline;">string</h5>.replace(/\\([^\\]+)\\/g, &ensp;"&lt;em&gt;$1&lt;/em&gt;");<br>
+            <h5 style="display: inline;">string</h5> = <h5 style="display: inline;">string</h5>.replace(/\-([^--]+)\-/g, &ensp;&ensp;"&lt;strike&gt;$1&lt;/strike&gt;");<br>
+            <h5 style="display: inline;">string</h5> = <h5 style="display: inline;">string</h5>.replace(/\_([^__]+)\_/g, &ensp;"&lt;u&gt;$1&lt;/u&gt;");<br>
+            <h5 style="display: inline;">string</h5> = <h5 style="display: inline;">string</h5>.replace(/\#([^##]+)\#/g, &nbsp;"&lt;span style='background-color: yellow;'&gt;$1&lt;/span&gt;");<br>
+            <h5 style="display: inline;">string</h5> = <h5 style="display: inline;">string</h5>.replace(/\*([^**]+)\*/g, &ensp;&emsp;"&lt;strong&gt;$1&lt;/strong&gt;");<br>
+            <h5 style="display: inline;">output</h5>.innerHTML = <h5 style="display: inline;">string</h5>; <br>
+            &emsp;&emsp;}<br>
+            );
+        </span>
+          </h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
