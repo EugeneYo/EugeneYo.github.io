@@ -2381,7 +2381,7 @@ blockquote {
     height: 48px;
     line-height: 46px;
     text-align: center;
-    background-color: #09aeea;
+    background-color: #21e1af;
     right: 10px;
     font-size: 19px;
     top: 10px;
@@ -2470,7 +2470,7 @@ blockquote {
     right: 10px;
     bottom: 10px;
     padding: 5px 0;
-    border: 2px solid #09aeea;
+    border: 2px solid#21e1af;
   }
 
   .lmpixels-arrows-nav div {
