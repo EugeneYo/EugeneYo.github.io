@@ -958,7 +958,7 @@ input[type="text"],
 .info-block-w-icon i {
   position: relative;
   font-size: 42px;
-  color: #09aeea;
+  color: #21e1af;
   opacity: 0.7;
 }
 /* --- End Info block with Icon --- */
@@ -1334,15 +1334,15 @@ input[type="text"],
 }
 
 .skills-second-style .skill-container.skill-5 .skill-percentage {
-  width: 95%;
+  width: 70%;
 }
 
 .skills-second-style .skill-container.skill-6 .skill-percentage {
-  width: 85%;
+  width: 70%;
 }
 
 .skills-second-style .skill-container.skill-7 .skill-percentage {
-  width: 100%;
+  width: 80%;
 }
 
 .skills-second-style .skill-container.skill-8 .skill-percentage {
@@ -1350,7 +1350,7 @@ input[type="text"],
 }
 
 .skills-second-style .skill-container.skill-9 .skill-percentage {
-  width: 90%;
+  width: 70%;
 }
 
 /* --- End of Skills Values --- */
