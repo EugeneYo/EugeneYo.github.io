@@ -2364,6 +2364,7 @@ blockquote {
 
   ul.main-menu a.active {
     opacity: 1;
+    color: #21e1af;
   }
 
   ul.main-menu .menu-icon {
