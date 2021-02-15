@@ -2319,6 +2319,7 @@ blockquote {
     margin: 0;
     border-radius: 0;
     min-height: 100%;
+    position: relative;
   }
 
   .content-area {
@@ -2474,10 +2475,12 @@ blockquote {
   }
 
   .lmpixels-arrows-nav {
+    position: absolute;
+
     background-color: rgba(0, 0, 0, 0.6);
     width: 48px;
     right: 10px;
-    bottom: 10px;
+    bottom: 20px;
     padding: 5px 0;
     border: 2px solid#21e1af;
   }
