@@ -6,7 +6,8 @@ love_btns.forEach((love_btn) => {
     love_btn.style.color = "#E7273F";
     love_btn.querySelector(".text").innerHTML = '<span class="grey-text">Sent to:</span> ~ Elaine ~';
 
-    createHearts(love_btn.querySelector(".icon-container"));
+    // createHearts(love_btn.querySelector(".icon-container"));
+    createHearts(document.querySelector("body")); // create hearts on body
   });
 
   love_btn.addEventListener("mouseup", (e) => {
@@ -66,8 +67,8 @@ function randomNum() {
 }
 
 function createHearts(container) {
-  // create 5 hearts
-  for (let i = 0; i < 15; i++) {
+  // create 15 hearts
+  for (let i = 0; i < 50; i++) {
     setTimeout(() => {
       const heart = document.createElement("span");
       heart.classList.add("heart");
