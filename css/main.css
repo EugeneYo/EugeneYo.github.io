@@ -2275,6 +2275,13 @@ blockquote {
 }
 
 @media only screen and (max-width: 1024px) {
+  html {
+    height: 100vh;
+  }
+
+  body {
+    height: 100%;
+  }
   .header {
     position: absolute;
     width: 100%;
